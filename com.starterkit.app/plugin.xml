@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.starterkit.app.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="com.starterkit.app.Perspective"
+            id="com.starterkit.app.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.starterkit.app.PerspectiveFactory1"
+            id="com.starterkit.app.perspective1"
+            name="SK">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.starterkit.app.application"
+            name="com.starterkit.app.product">
+         <property
+               name="appName"
+               value="com.starterkit.app.product">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
