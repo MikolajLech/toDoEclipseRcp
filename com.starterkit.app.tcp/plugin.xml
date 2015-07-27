@@ -56,14 +56,14 @@
          point="org.eclipse.ui.views">
       <view
             allowMultiple="true"
-            class="com.starterkit.app.tcp.views.SidePanelView"
+            class="com.starterkit.app.tcp.views.ArchiveView"
             fastViewWidthRatio="0.5"
             id="com.starterkit.app.tcp.sidePanel"
             name="sidePanel"
             restorable="true">
       </view>
       <view
-            class="com.starterkit.app.tcp.views.ToDo"
+            class="com.starterkit.app.tcp.views.ToDoView"
             id="com.starterkit.app.tcp.toDo"
             name="ToDo"
             restorable="true">

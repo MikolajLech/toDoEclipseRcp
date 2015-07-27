@@ -11,13 +11,13 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.layout.GridData;
 
-public class SidePanelView extends ViewPart {
+public class ArchiveView extends ViewPart {
 	private Text text;
 	private Text text_1;
 	private Text text_2;
 	private Text text_3;
 
-	public SidePanelView() {
+	public ArchiveView() {
 		// TODO Auto-generated constructor stub
 	}
 
