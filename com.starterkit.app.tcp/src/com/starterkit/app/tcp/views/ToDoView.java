@@ -45,7 +45,9 @@ public class ToDoView extends ViewPart {
 			public void widgetSelected(SelectionEvent e) {
 				if(!("").equals(text.getText())) {
 					list.add(text.getText());
-					text.setText("");
+					TableItem item = new TableItem (table, SWT.NONE);
+					item.setText(0, "" + table.getItemCount());
+					item.setText(1, text.getText());
 				}
 			}
 		});
@@ -69,8 +71,8 @@ public class ToDoView extends ViewPart {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				System.out.println(list.getFocusIndex());
-				if(list.getSelectionIndex() != -1) {
-					list.remove(list.getFocusIndex());
+				if(table.getSelectionIndex() != -1) {
+					table.remove(table.getSelectionIndex());
 				}
 			}
 		});		
@@ -94,8 +96,8 @@ public class ToDoView extends ViewPart {
 		combo.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				list.add(combo.getText());
-				list.update();
+				table.getSelection()[0].setText(2, combo.getText());
+				combo.deselectAll();
 			}
 		});
 		
@@ -114,22 +116,16 @@ public class ToDoView extends ViewPart {
 			TableColumn column = new TableColumn(table, SWT.NONE);
 			column.setText(titles[i]);
 		}
-		int count = 8;
+		int count = 3;
 		for (int i=0; i<count; i++) {
 			TableItem item = new TableItem (table, SWT.NONE);
-			item.setText (0, "x");
-			item.setText (1, "y");
-			item.setText (2, "!");
-			item.setText (3, "this stuff behaves the way I expect");
-			item.setText (4, "almost everywhere");
-			item.setText (5, "some.folder");
-			item.setText (6, "line " + i + " in nowhere");
+			item.setText (0, "" + table.getItemCount());
+			item.setText (1, "nowe zadanie");
+			item.setText (2, "mało ważne");
 		}
 		for (int i=0; i<titles.length; i++) {
 			table.getColumn (i).pack ();
 		}	
-		
-
 	}
 
 	@Override
