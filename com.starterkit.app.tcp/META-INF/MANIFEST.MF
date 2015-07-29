@@ -7,7 +7,8 @@ Bundle-Activator: com.starterkit.app.tcp.Activator
 Bundle-Vendor: STARTERKIT
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
- org.eclipse.swt
+ org.eclipse.swt,
+ org.eclipse.jface
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .,
