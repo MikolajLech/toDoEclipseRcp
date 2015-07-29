@@ -21,6 +21,6 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
         configurer.setInitialSize(new Point(900, 700));
         configurer.setShowCoolBar(true);
         configurer.setShowStatusLine(false);
-        configurer.setTitle("Homepage"); //$NON-NLS-1$
+        configurer.setTitle("ToDo app"); //$NON-NLS-1$
     }
 }

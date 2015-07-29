@@ -39,5 +39,17 @@
          </property>
       </product>
    </extension>
+   <extension
+         id="starterkit"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.starterkit.app.application"
+            name="com.starterkit.app.product">
+         <property
+               name="appName"
+               value="com.starterkit.app.product">
+         </property>
+      </product>
+   </extension>
 
 </plugin>

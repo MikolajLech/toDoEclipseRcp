@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="tcpProduct" id="com.starterkit.app.tcp.product" application="com.starterkit.app.application" useFeatures="false" includeLaunchers="true">
+
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+   <splash
+      startupProgressRect="0,400,700,15" />
+   <launcher name="ToDo">
+      <solaris/>
+      <win useIco="false">
+         <ico path="/com.starterkit.app.tcp/icons/lauchIcons.ico"/>
+         <bmp
+            winSmallHigh="/com.starterkit.app.tcp/icons/taskIcon16.bmp"
+            winMediumHigh="/com.starterkit.app.tcp/icons/taskIcon32.bmp"
+            winLargeHigh="/com.starterkit.app.tcp/icons/taskIcon48.bmp"/>
+      </win>
+   </launcher>
+
+
+   <vm>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</windows>
+   </vm>
+
+
+   <plugins>
+   </plugins>
+
+
+</product>

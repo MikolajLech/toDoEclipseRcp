@@ -78,5 +78,29 @@
          </view>
       </perspectiveExtension>
    </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.starterkit.app.application"
+            name="tcpProduct">
+         <property
+         	name="windowImages"
+         	value="icons/taskIcon16.gif, icons/taskIcon32.gif, icons/taskIcon48.gif">
+         </property>
+         <property
+               name="appName"
+               value="tcpProduct">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="0,0,445,15">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+      </product>
+   </extension>
 
 </plugin>
