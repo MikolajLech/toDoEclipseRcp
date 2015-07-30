@@ -51,5 +51,29 @@
          </property>
       </product>
    </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar">
+         <toolbar
+               id="com.starterkit.app.helpToolbar">
+            <command
+                  commandId="com.starterkit.app.commands.Help"
+                  icon="icons/alt_window16.gif"
+                  label="Show help"
+                  style="push">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com.starterkit.app.commands.handlers.Help"
+            id="com.starterkit.app.commands.Help"
+            name="Help">
+      </command>
+   </extension>
 
 </plugin>
